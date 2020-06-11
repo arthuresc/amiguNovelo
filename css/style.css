@@ -1,0 +1,521 @@
+/* Inicio padronização do projeto */
+
+:root{
+    --cor-roxa-light: #8643de;
+    --cor-roxa-dark: #622ea7;
+    --cor-rosa-light: #f57381;
+    --cor-rosa-dark: #D56370;
+    --cor-azul-light: #71C0F5;
+    --cor-azul-dark: #57A0D1;
+    --cor-verde-light: #35f18d;
+    --cor-verde-dark: #4aa876;
+    --cor-light: #ffffff;
+    --cor-dark: #707070;
+    --font-text: 'Quicksand', Arial, Helvetica, sans-serif;
+    --font-title: 'kristenitcregular','Kristen ITC', 'Dekko', cursive;
+}
+
+@font-face {font-family: "Kristen ITC Normal";
+    src: url("./font/Kristen ITC Normal.eot");
+    src: url("./font/Kristen ITC Normal.eot?#iefix") format("embedded-opentype"),
+         url("./font/Kristen ITC Normal.woff") format("woff"),
+         url("./font/Kristen ITC Normal.ttf") format("truetype"),
+         url("./font/Kristen ITC Normal.svg#Kristen ITC Normal") format("svg");
+         font-weight: normal;
+         font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#corpo {
+    background-color: var(--cor-light);
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100vw;
+}
+/* MENU LOGO */
+#menu .config-menu{
+    width: 30vw;
+    position: relative;      
+}
+#menu .config-path{
+    position: absolute;
+    top: -15vw;
+    left: -7vh;
+}
+#menu .config-path-logo{
+    position: absolute;
+    top: -13vw;
+    left: -7vh;
+}
+#menu .config-text{
+    font-family: var(--font-title);
+    font-size: 3rem;
+    color: var(--cor-light);
+    position: absolute;
+    left: 25%;
+    top: 4vh;
+}
+
+/* SOBRE */
+#sobre{
+    height: 100vh;
+    width: auto;
+}
+
+#img-sobre{
+    height: 100vh;
+    width: auto;
+    background-image: url(../img/sobre-esquerdo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#texto-sobre{
+    max-height: 100vh;
+}
+
+#texto-sobre .config-text {
+    margin: auto;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    color: var(--cor-dark);
+    padding: 0;
+    z-index: 1;
+}
+
+#texto-sobre .config-title {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--cor-verde-light);
+}
+
+/* CATALOGO */
+
+#catalogo {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.img-fauno{
+    background-image: url(../img/img-fauno-amigu.png);
+}
+.img-velhinha{
+    background-image: url(../img/img-velhinha-amigu.png);
+}
+.img-harry{
+    background-image: url(../img/img-harry-amigu.png);
+}
+.img-maria{
+    background-image: url(../img/img-maria-amigu.png);
+}
+.img-unicornio{
+    background-image: url(../img/img-unicornio-amigu.png);
+}
+.img-polvo{
+    background-image: url(../img/img-polvo-amigu.png);
+}
+.img-catalogo{
+    height: 100vh !important;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-amigu{
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+}
+
+.card-amigu{
+    flex-shrink: 3;
+}
+
+.stay-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .stay-grow:hover, .stay-grow:focus, .stay-grow:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+#arrow-next, #arrow-back{
+    box-sizing: border-box !important;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    /* background-color: var(--cor-roxa-dark); */
+}
+
+#infoTecAmigu {
+    font-family: var(--font-text);
+    font-size: 0.9rem;
+    color: var(--cor-dark); 
+}
+
+#catalogo-conteudo {
+    max-height: 80vh;
+    z-index: 5;
+}
+
+#catalogo-descricao p {
+    margin-top: 2vh;
+    font-family: var(--font-title);
+    color: var(--cor-dark); 
+    font-size: 1rem;
+}
+
+#catalogo-descricao h3 {
+    font-family: var(--font-title);
+    /* font-size: 2rem; */
+    color: var(--cor-azul-dark);
+    margin-top: 3vh;
+    font-size: 2.2rem;
+}
+#nome-amigu{
+    height: 8vh !important;
+    
+}
+/* Aqui vai o .txt-amigu */
+
+.botao {
+    height: 5vh;
+    width: 20vw;
+    font-family: var(--font-title);
+    font-size: 1.7vh;
+    border-width: 0px 0px 2px 0px;
+    border-radius: 7px;
+    justify-content: center;
+}
+
+.botao:active {
+    border: none !important;
+}
+
+.botao-color-blue {
+    background-color: var(--cor-azul-light);
+    border-color: var(--cor-azul-dark);
+    color: var(--cor-light);
+}
+
+.botao-color-blue > a:hover {
+    color: var(--cor-light);
+}
+
+.botao > a{
+    color: var(--cor-light);
+    font-size: 1.7vh;
+}
+
+#preco-amigu {
+    font-size: 1.4rem;
+}
+
+/* ORÇAMENTO */
+
+#img-orcamento{
+    height: 100vh;
+    width: auto;
+    background-image: url(../img/orcamento-esquerdo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#orcamento {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#formulario-orcamento{
+    z-index: 3;
+}
+
+.input-label {
+    display: block;
+    font-family: var(--font-title);
+    color: var(--cor-dark);
+    font-size: 1.2rem;
+}
+
+#formulario-orcamento p {
+    font-family: var(--font-title);
+    color: var(--cor-dark);
+}
+
+.p-lg {
+    font-size: 1.4rem;
+}
+
+.p-sm {
+    font-size: 1rem;
+}
+
+.orcamento-input {
+    margin: 1vh 0vw 4vh 0vw;
+    width: 12rem;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid var(--cor-dark);
+    color: var(--cor-dark);
+    font-family: var(--font-text);
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+.orcamento-input:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: none;
+    border-bottom: 2px solid var(--cor-dark);
+    background-color: transparent;
+    -webkit-text-fill-color: var(--cor-dark);
+    box-shadow: 0 0 0px 1000px var(--cor-light) inset;
+}
+
+.botao-color-red {
+    background-color: var(--cor-rosa-light);
+    border-color: var(--cor-rosa-dark);
+    color: var(--cor-light);
+}
+
+/* RODAPÉ */
+
+footer{
+    height: 15vh;
+    max-width: 100vw;
+    margin: 0 !important;
+    background-color: var(--cor-roxa-light);
+    position: relative;
+}
+.linha-novelo{
+    height: 315vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+ 
+}
+
+#rodape-icones-lista {
+    width: 50vw;
+    margin-top: 5vh;
+}
+
+.rodape-li{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-icone {
+    width: auto;
+    height: 5vh;
+    margin: 3.5vh 1vw 3.5vh 1vw;
+    color: var(--cor-roxa-dark);
+}
+
+/* TODA A COSTURA ENTRE AS IMAGENS (FÁCIL ALTERAÇÃO) */
+
+#main .costura-sobre{
+    position: relative;
+    z-index: 1;
+    margin-top: 98vh;
+}
+
+#main .costura-catalogo{
+    position: relative;
+    z-index: 1;
+    margin-top: -2vh;
+}
+/*BICHINHOS*/
+
+.bichinho {
+    position: absolute;
+    height: 17vh;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.bichinho:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;   
+}
+
+.baleia {
+    left: 50vw;
+    top: 18vh;  
+    transform: rotate(-30deg);
+    animation: rotation 5s infinite alternate-reverse linear;
+}
+
+.porco {
+    left: 90vw;
+    top: 15vh;  
+    transform: rotate(30deg);
+    animation: pulse 0.5s infinite;
+}
+
+.girafa {
+    left: 50vw;
+    top: 80vh;  
+    transform: rotate(30deg);
+    animation: bounce 2s infinite;
+}
+
+.coruja {
+    left: 90vw;
+    top: 90vh;  
+    transform: rotate(30deg);
+    animation: shake 3s infinite;
+}
+
+.galinha {
+    z-index: 10;
+    left: 90vw;
+    top: 175vh;  
+    animation: bounce 2s infinite;
+}
+
+.polvo {
+    z-index: 10;
+    left: 55vw;
+    top: 188vh;  
+    transform: rotate(-30deg);
+    animation: shake 3s infinite;
+}
+
+.tartaruga {
+    left: 50vw;
+    top: 220vh;  
+    transform: rotate(-120deg);
+    animation: rotation 5s infinite alternate linear;
+}
+
+.elefante {
+    left: 87vw;
+    top: 275vh;  
+    /* transform: rotate(-50deg) !important; */
+    animation: rotation 5s infinite alternate-reverse linear;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY*/
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) { 
+    .txt-amigu { 
+        font-size: 0.7rem;
+        height: 20vh; 
+    }
+    
+    .botao { 
+        font-size: 1.7vh ; 
+    }
+    
+    .input-label {
+        font-size: 0.8rem !important;
+    }
+    
+    .orcamento-input {
+        margin: 1vh 0vw 2vh 0vw;
+    }
+    .baleia {
+        left: 50vw !important; 
+    }
+    .girafa {
+        left: 50vw !important;
+    }
+    .elefante {
+        left: 90vw !important;
+        top: 265vh !important;  
+    }
+    .tartaruga {
+        left: 47vw !important; 
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+    .input-label {
+        font-size: 1.0rem !important;
+    }
+    .txt-amigu{
+        font-size: 1.2rem;
+        /* line-height: 35vh !important; */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+    .config-text { 
+        font-size: 1.2rem !important; 
+    }
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) { 
+    #arrow-back,
+    #arrow-next{
+        /* padding: 8vh 1vw; */
+        height: 8vh !important;
+    }
+    .txt-amigu { 
+        font-size: 0.7rem;
+        height: 15vh; 
+    }
+}
+
+@media screen and (min-width:1930px){
+    .img-catalogo{
+        height: 115vh;
+    }
+    .linha-novelo{
+        height: 330vh;
+    }
+    .box-amigu{
+        max-width: 30vw !important;
+    }
+}

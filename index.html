@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigu Novelo</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/style.css"> <!-- Sobre a fonte -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/hover.css"> <!-- Animação HOVER automatico por classes -->
+    <script src="https://kit.fontawesome.com/ab950ed515.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8455a3d02b.js" crossorigin="anonymous"></script>
+    <script src="./js/catalogo-carousel.js"></script>
+    <script src="./js/orcar.js"></script>
+</head>
+
+<body id="corpo" class="container-fluid p-0">
+    <header id="header" class="fixed-top d-flex">
+        <nav id="menu" class="navbar navbar-expand-sm">
+            <div class="row full-menu">
+                <div class="col-sm-3">
+                    <a href="index.html" class="navbar-bar-brand">
+                        <div class="logo-caixa config-menu animated bounce">
+                            <img src="./img/menu-path--03.svg" class="config-path-logo logo-menu">
+                            <h1 class="d-none">Amigu Novelo</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#sobre" class="navbar-bar-brand nav-link hvr-bounce-in">
+                        <div class="sobre-caixa config-menu">
+                            <svg class="config-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 130">
+                                <defs>
+                                    <style>
+                                        .sobre-sombra {
+                                            fill: #4aa876;
+                                        }
+
+                                        .sobre-fundo {
+                                            fill: #35f18d;
+                                        }
+
+                                        .sobre-texto {
+                                            font-size: 14px;
+                                            fill: #fff;
+                                            font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="sobre-sombra"
+                                    d="M143,10.28c48,15.66,66.68,53.65,41.78,84.85s-84,43.8-131.94,28.14S-13.88,69.62,11,38.42,95-5.37,143,10.28Z" />
+                                <path class="sobre-fundo"
+                                    d="M147.2,6.73c48,15.66,66.68,53.65,41.78,84.85S105,135.37,57,119.71-9.64,66.07,15.26,34.87,99.23-8.93,147.2,6.73Z" />
+                                <text class="sobre-texto" transform="translate(80.03 111.87)">
+                                    Sobre
+                                </text>
+                            </svg>
+                            <!-- <img class="config-path" src="./img/menu-path--02.svg" alt=""> -->
+                            <!-- <span class="sobre-menu config-text"> Sobre </span> -->
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-3">
+                    <a href="#catalogo" class="navbar-bar-brand nav-link hvr-bounce-in teste-btn">
+                        <div class="catalogo-caixa config-menu config-menu1">
+                            <svg class="config-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 130">
+                                <defs>
+                                    <style>
+                                        .catalogo-sombra {
+                                            fill: #57a0d1;
+                                        }
+
+                                        .catalogo-fundo {
+                                            fill: #71c0f5;
+                                        }
+
+                                        .catalogo-texto {
+                                            font-size: 14px;
+                                            fill: #fff;
+                                            font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="catalogo-sombra"
+                                    d="M171.82,25.57c37.34,24.74,35.94,63.87-3.12,87.4s-101,22.56-138.33-2.18S-5.56,46.93,33.5,23.39,134.49.83,171.82,25.57Z" />
+                                <path class="catalogo-fundo"
+                                    d="M172.6,19.13c38,25,36.26,64.87-3.83,89.11S65.38,131.89,27.4,106.91-8.86,42,31.23,17.8,134.62-5.85,172.6,19.13Z" />
+                                <text class="catalogo-texto" transform="translate(68.96 111.87)">
+                                    Catálogo
+                                </text>
+                            </svg>
+                            <!-- <img class="config-path " src="./img/menu-path--01.svg" alt=""> -->
+                            <!-- <span class="catalogo-menu config-text"> Catálogo </span> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#orcamento" class="navbar-bar-brand nav-link hvr-bounce-in teste-btn">
+                        <div class="orcamento-caixa config-menu">
+                            <svg class="config-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 130">
+                                <defs>
+                                    <style>
+                                        .a {
+                                            fill: #d56370;
+                                        }
+
+                                        .b {
+                                            fill: #f57381;
+                                        }
+
+                                        .c {
+                                            font-size: 14px;
+                                            fill: #fff;
+                                            font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="a"
+                                    d="M135.45,10.32c49.6,14.57,73.3,51.87,52.92,83.31s-77.11,45.11-126.72,30.54S-11.64,72.3,8.73,40.86,85.84-4.25,135.45,10.32Z" />
+                                <path class="b"
+                                    d="M134.51,4.14c51.82,12.46,78.38,49.29,59.32,82.25S117.31,136,65.49,123.52-12.89,74.23,6.17,41.27,82.69-8.32,134.51,4.14Z" />
+                                <text class="c" transform="translate(53.77 110.87)">
+                                    Orçamento
+                                </text>
+                            </svg>
+                            <!-- <img class="config-path " src="./img/menu-path--04.svg" alt=""> -->
+                            <!-- <span class="orcamento-menu config-text"> Orçamento </span> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="main" class="d-flex flex-column flex-wrap">
+
+        <section id="sobre" class="row d-flex flex-row p-0 m-0 flex-wrap">
+            <div class="">
+                <img src="img/bichinhos/baleia.svg" class="bichinho baleia d-md-block">
+                <img src="img/bichinhos/porco.svg" class="bichinho porco d-md-block">
+                <img src="img/bichinhos/girafa.svg" class="bichinho girafa d-md-block">
+                <img src="img/bichinhos/coruja.svg" class="bichinho coruja d-md-block d-sm-none">
+            </div>
+            <div id="img-sobre" class="col-6" alt="">
+                <div class="row">
+                    <img src="./img/costura-01.svg" class="costura-sobre col-12"> </img>
+                </div>
+            </div>
+            <div id="texto-sobre" class="col-6 jumbotron p-4 my-auto bg-transparent">
+                <div class="row mt-sm-5 mt-md-5 ">
+                    <h2 class="text-center col-md-8 mx-auto config-title">Sobre Nós</h2>
+                    <p class="text-center col-md-8 mt-3 mx-auto config-text">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Esse accusamus pariatur perferendis veritatis voluptatum. Blanditiis
+                        repellendus cupiditate eveniet nemo sapiente, vero assumenda maxime quia enim laudantium
+                        reiciendis similique sint quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                        nobis est quis dicta libero dolores debitis voluptatibus magnam corrupti delectus. Ipsam
+                        voluptas nisi tempore ullam dicta, quis repudiandae unde molestias!</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="catalogo" class="row d-flex flex-row p-0 align-items-md-center align-items-lg-end">
+            <div class="">
+                <img src="img/bichinhos/galinha.svg" class="bichinho galinha d-md-block">
+                <img src="img/bichinhos/polvo.svg" class="bichinho polvo d-md-block">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div id="img-catalogo" class="col-6 img-catalogo img-fauno" alt="Imagem do Amigurumi"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="catalogo-conteudo" class="container col-6 d-flex flex-column flex-nowrap flex-shrink-1 pb-5">
+
+
+                <div class="box-amigu mx-auto d-sm-none d-md-none d-lg-flex col-lg-10">
+                    <svg onclick="switchAmigu(0)" class="card-amigu col-lg-2 px-lg-2 hvr-grow"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94 201">
+                        <defs>
+                            <style>
+                                .cls-1-1 {
+                                    fill: none;
+                                }
+
+                                .cls-2-1 {
+                                    fill: #c9f7ff;
+                                }
+
+                                .cls-3-1 {
+                                    fill: #83b8ff;
+                                }
+
+                                .cls-4-1 {
+                                    fill: #a4eaff;
+                                }
+
+                                .cls-5-1 {
+                                    font-size: 18px;
+                                    font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                }
+
+                                .cls-5-1,
+                                .cls-6-1 {
+                                    fill: #282828;
+                                }
+
+                                .cls-6-1 {
+                                    font-size: 14px;
+                                    font-family: Quicksand-Medium, Quicksand;
+                                    font-weight: 500;
+                                }
+
+                                .cls-7-1 {
+                                    clip-path: url(#clip-path);
+                                }
+                            </style>
+                            <clipPath id="clip-path">
+                                <circle id="Elipse_69-2" data-name="Elipse 69-2" class="cls-1-1" cx="47.03" cy="47"
+                                    r="47" />
+                            </clipPath>
+                        </defs>
+                        <path class="cls-2-1"
+                            d="M47,197.5c-24,0-43.5-20.5-43.5-45.69V50.5h87V151.81C90.5,177,71,197.5,47,197.5Z" />
+                        <path class="cls-3-1"
+                            d="M87,54v97.81C87,175.11,69.09,194,47,194S7,175.11,7,151.81V54H87m7-7H0V151.81C0,178.93,21.08,201,47,201s47-22.07,47-49.19V47Z" />
+                        <circle id="Elipse_69-2-2" data-name="Elipse 69-2" class="cls-4-1" cx="47" cy="47" r="47" />
+                        <text class="cls-5-1" transform="translate(19.9 119.2)">
+                            Lúcio
+                            <tspan x="-8.64" y="24">
+                                o Fauno
+                            </tspan>
+                        </text>
+                        <text class="cls-6-1" transform="translate(18.24 169.48)">
+                            R$ 70,00
+                        </text>
+                        <g class="cls-7-1">
+                            <image width="1200" height="1200" transform="translate(-35.8) scale(0.14)"
+                                xlink:href="./img/thumbnails/fauno-amigu-thumb.png" />
+                        </g>
+                    </svg>
+                    <svg onclick="switchAmigu(1)" class="card-amigu col-lg-2 px-lg-2 hvr-grow"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94 201">
+                        <defs>
+                            <style>
+                                .cls-1-2 {
+                                    fill: none;
+                                }
+
+                                .cls-2-2 {
+                                    fill: #fff3b2;
+                                }
+
+                                .cls-3-2 {
+                                    fill: #ddaf7e;
+                                }
+
+                                .cls-4-2 {
+                                    fill: #fff1c5;
+                                }
+
+                                .cls-5-2 {
+                                    font-size: 20px;
+                                    font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                }
+
+                                .cls-5-2,
+                                .cls-6 {
+                                    fill: #282828;
+                                }
+
+                                .cls-6-2 {
+                                    font-size: 14px;
+                                    font-family: Quicksand-Medium, Quicksand;
+                                    font-weight: 500;
+                                }
+
+                                .cls-7-2 {
+                                    clip-path: url(#clip-path);
+                                }
+                            </style>
+                            <clipPath id="clip-path">
+                                <circle id="Elipse_69-2" data-name="Elipse 69-2" class="cls-1-2" cx="47.03" cy="47"
+                                    r="47" />
+                            </clipPath>
+                        </defs>
+                        <path class="cls-2-2"
+                            d="M47,197.5c-24,0-43.5-20.5-43.5-45.69V50.5h87V151.81C90.5,177,71,197.5,47,197.5Z" />
+                        <path class="cls-3-2"
+                            d="M87,54v97.81C87,175.11,69.09,194,47,194S7,175.11,7,151.81V54H87m7-7H0V151.81C0,178.93,21.08,201,47,201s47-22.07,47-49.19V47Z" />
+                        <circle id="Elipse_69-2-2" data-name="Elipse 69-2" class="cls-4-2" cx="47" cy="47" r="47" />
+                        <text class="cls-5-1 " transform="translate(19.9 119.2)">
+                            Nossa
+                            <tspan x="-8.64" y="24">
+                                Senhora
+                            </tspan>
+                        </text>
+                        <text class="cls-6-2" transform="translate(18.24 169.48)">
+                            R$ 40,00
+                        </text>
+                        <g class="cls-7-2">
+                            <image width="1200" height="1200" transform="translate(-35.8) scale(0.14)"
+                                xlink:href="./img/thumbnails/maria-amigu-thumb.png" />
+                        </g>
+                    </svg>
+                    <svg onclick="switchAmigu(2)" class="card-amigu col-lg-2 px-lg-2 hvr-grow"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94 201">
+                        <defs>
+                            <style>
+                                .cls-1-3 {
+                                    fill: none;
+                                }
+
+                                .cls-2-3 {
+                                    fill: #f5aaff;
+                                }
+
+                                .cls-3-3 {
+                                    fill: #ce1bee;
+                                }
+
+                                .cls-4-3 {
+                                    fill: #c0a9ff;
+                                }
+
+                                .cls-5-3 {
+                                    font-size: 20px;
+                                    font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                }
+
+                                .cls-5-3,
+                                .cls-6 {
+                                    fill: #282828;
+                                }
+
+                                .cls-6-3 {
+                                    font-size: 14px;
+                                    font-family: Quicksand-Medium, Quicksand;
+                                    font-weight: 500;
+                                }
+
+                                .txt-2-3 {
+                                    font-size: 15px;
+                                }
+
+                                .cls-7-3 {
+                                    clip-path: url(#clip-path);
+                                }
+                            </style>
+                            <clipPath id="clip-path">
+                                <circle id="Elipse_69-2" data-name="Elipse 69-2" class="cls-1-3" cx="47.03" cy="47"
+                                    r="47" />
+                            </clipPath>
+                        </defs>
+                        <path class="cls-2-3"
+                            d="M47,197.5c-24,0-43.5-20.5-43.5-45.69V50.5h87V151.81C90.5,177,71,197.5,47,197.5Z" />
+                        <path class="cls-3-3"
+                            d="M87,54v97.81C87,175.11,69.09,194,47,194S7,175.11,7,151.81V54H87m7-7H0V151.81C0,178.93,21.08,201,47,201s47-22.07,47-49.19V47Z" />
+                        <circle id="Elipse_69-2-2" data-name="Elipse 69-2" class="cls-4-3" cx="47" cy="47" r="47" />
+                        <text class="cls-5-3" transform="translate(12.9 119.2)">
+                            Duni o
+                            <tspan class="txt-2-3" x="-1.64" y="24">
+                                Unicórnio
+                            </tspan>
+                        </text>
+                        <text class="cls-6-3" transform="translate(18.24 169.48)">
+                            R$ 50,00
+                        </text>
+                        <g class="cls-7-3">
+                            <image width="1200" height="1200" transform="translate(-35.8) scale(0.14)"
+                                xlink:href="./img/thumbnails/unicornio-amigu-thumb.png" />
+                        </g>
+                    </svg>
+                    <svg onclick="switchAmigu(3)" class="card-amigu col-lg-2 px-lg-2 hvr-grow"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94 201">
+                        <defs>
+                            <style>
+                                .cls-1-4 {
+                                    fill: none;
+                                }
+
+                                .cls-2-4 {
+                                    fill: #deffaa;
+                                }
+
+                                .cls-3-4 {
+                                    fill: #7fbd5c;
+                                }
+
+                                .cls-4-4 {
+                                    fill: #c6fba3;
+                                }
+
+                                .cls-5-4 {
+                                    font-size: 20px;
+                                    font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                }
+
+                                .cls-5-4,
+                                .cls-6 {
+                                    fill: #282828;
+                                }
+
+                                .cls-6-4 {
+                                    font-size: 14px;
+                                    font-family: Quicksand-Medium, Quicksand;
+                                    font-weight: 500;
+                                }
+
+                                .cls-7-4 {
+                                    clip-path: url(#clip-path);
+                                }
+                            </style>
+                            <clipPath id="clip-path">
+                                <circle id="Elipse_69-2" data-name="Elipse 69-2" class="cls-1-4" cx="47.03" cy="47"
+                                    r="47" />
+                            </clipPath>
+                        </defs>
+                        <path class="cls-2-4"
+                            d="M47,197.5c-24,0-43.5-20.5-43.5-45.69V50.5h87V151.81C90.5,177,71,197.5,47,197.5Z" />
+                        <path class="cls-3-4"
+                            d="M87,54v97.81C87,175.11,69.09,194,47,194S7,175.11,7,151.81V54H87m7-7H0V151.81C0,178.93,21.08,201,47,201s47-22.07,47-49.19V47Z" />
+                        <circle id="Elipse_69-2-2" data-name="Elipse 69-2" class="cls-4-4" cx="47" cy="47" r="47" />
+                        <text class="cls-5-4" transform="translate(18.9 119.2)">
+                            Dona
+                            <tspan x="3.64" y="24">
+                                Luisa
+                            </tspan>
+                        </text>
+                        <text class="cls-6-4" transform="translate(18.24 169.48)">
+                            R$ 65,00
+                        </text>
+                        <g class="cls-7-4">
+                            <image width="1200" height="1200" transform="translate(-35.8) scale(0.14)"
+                                xlink:href="./img/thumbnails/velhinha-amigu-thumb.png" />
+                        </g>
+                    </svg>
+                    <svg onclick="switchAmigu(4)" class="card-amigu col-lg-2 px-lg-2 hvr-grow"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94 201">
+                        <defs>
+                            <style>
+                                .cls-1-5 {
+                                    fill: none;
+                                }
+
+                                .cls-2-5 {
+                                    fill: #39516d;
+                                }
+
+                                .cls-3-5 {
+                                    fill: #3b2e66;
+                                }
+
+                                .cls-4-5 {
+                                    fill: #593483;
+                                }
+
+                                .cls-5-5 {
+                                    font-size: 20px;
+                                    font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                }
+
+                                .cls-5-5,
+                                .cls-6-5 {
+                                    fill: #ffffff;
+                                }
+
+                                .cls-6-5 {
+                                    font-size: 14px;
+                                    font-family: Quicksand-Medium, Quicksand;
+                                    font-weight: 500;
+                                }
+
+                                .cls-7-5 {
+                                    clip-path: url(#clip-path);
+                                }
+                            </style>
+                            <clipPath id="clip-path">
+                                <circle id="Elipse_69-2" data-name="Elipse 69-2" class="cls-1-5" cx="47.03" cy="47"
+                                    r="47" />
+                            </clipPath>
+                        </defs>
+                        <path class="cls-2-5"
+                            d="M47,197.5c-24,0-43.5-20.5-43.5-45.69V50.5h87V151.81C90.5,177,71,197.5,47,197.5Z" />
+                        <path class="cls-3-5"
+                            d="M87,54v97.81C87,175.11,69.09,194,47,194S7,175.11,7,151.81V54H87m7-7H0V151.81C0,178.93,21.08,201,47,201s47-22.07,47-49.19V47Z" />
+                        <circle id="Elipse_69-2-2" data-name="Elipse 69-2" class="cls-4-5" cx="47" cy="47" r="47" />
+                        <text class="cls-5-5" transform="translate(18.9 119.2)">
+                            Henry
+                            <tspan x="-8.64" y="24">
+                                o Mago
+                            </tspan>
+                        </text>
+                        <text class="cls-6-5" transform="translate(18.24 169.48)">
+                            R$ 40,00
+                        </text>
+                        <g class="cls-7-5">
+                            <image width="1200" height="1200" transform="translate(-35.8) scale(0.14)"
+                                xlink:href="./img/thumbnails/harry-amigu-thumb.png" />
+                        </g>
+                    </svg>
+                    <svg onclick="switchAmigu(5)" class="card-amigu col-lg-2 px-lg-2 hvr-grow "
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94 201">
+                        <defs>
+                            <style>
+                                .cls-1-6 {
+                                    fill: none;
+                                }
+
+                                .cls-2-6 {
+                                    fill: #a3caf8;
+                                }
+
+                                .cls-3-6 {
+                                    fill: #1321a5;
+                                }
+
+                                .cls-4-6 {
+                                    fill: #d4b3ff;
+                                }
+
+                                .cls-5-6 {
+                                    font-size: 20px;
+                                    font-family: KristenITC-Regular, Kristen ITC, kristenitcregular, Dekko;
+                                }
+
+                                .cls-5-6,
+                                .cls-6-6 {
+                                    fill: #282828;
+                                }
+
+                                .cls-6-6 {
+                                    font-size: 14px;
+                                    font-family: Quicksand-Medium, Quicksand;
+                                    font-weight: 500;
+                                }
+
+                                .cls-7-6 {
+                                    clip-path: url(#clip-path);
+                                }
+                            </style>
+                            <clipPath id="clip-path">
+                                <circle id="Elipse_69-2" data-name="Elipse 69-2" class="cls-1" cx="47.03" cy="47"
+                                    r="47" />
+                            </clipPath>
+                        </defs>
+                        <path class="cls-2-6"
+                            d="M47,197.5c-24,0-43.5-20.5-43.5-45.69V50.5h87V151.81C90.5,177,71,197.5,47,197.5Z" />
+                        <path class="cls-3-6"
+                            d="M87,54v97.81C87,175.11,69.09,194,47,194S7,175.11,7,151.81V54H87m7-7H0V151.81C0,178.93,21.08,201,47,201s47-22.07,47-49.19V47Z" />
+                        <circle id="Elipse_69-2-2" data-name="Elipse 69-2" class="cls-4-6" cx="47" cy="47" r="47" />
+                        <text class="cls-5-6" transform="translate(13.9 119.2)">
+                            Tavo o
+                            <tspan x="5.64" y="24">
+                                Polvo
+                            </tspan>
+                        </text>
+                        <text class="cls-6-6" transform="translate(18.24 169.48)">
+                            R$ 25,00
+                        </text>
+                        <g class="cls-7-6">
+                            <image width="1200" height="1200" transform="translate(-35.8) scale(0.14)"
+                                xlink:href="./img/thumbnails/polvo-amigu-thumb.png" />
+                        </g>
+                    </svg>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div id="catalogo-descricao" class="">
+                    <div class="d-flex flex-row flex-wrap mx-auto align-items-center">
+
+                        <svg onclick="prevAmigu()" id="arrow-back" class="arrow-back p-md-2 ml-auto col-md-1 col-xl-2"
+                            data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.82 276.63">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #707070;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="cls-1"
+                                d="M138.31,276.63a7.47,7.47,0,0,1-5.3-2.2L2.2,143.62A7.5,7.5,0,0,1,2.2,133L133,2.2a7.5,7.5,0,0,1,10.61,10.6L18.11,138.31,143.62,263.83a7.5,7.5,0,0,1-5.31,12.8Z" />
+                        </svg>
+
+
+                        <div id="txts-amigu" class="d-flex flex-column align-items-center col-8">
+                            <h3 id="nome-amigu" class="text-center">Lúcio, o Fauno</h3>
+                            <p id="txt-amigu" class="text-center txt-amigu">
+                                Os Faunos são criaturas curiosas, não?
+                                Normalmente possuem pele avermelhada, cabelos encaracolados, barba curta, chifres na testa,
+                                pernas de cabra, um rostinho estranho e agradável.
+                            </p>
+                        </div>
+
+
+                        <svg onclick="nextAmigu()" id="arrow-next" class="arrow-next p-md-2 mr-auto col-md-1 col-xl-2"
+                            data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.82 276.63">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #707070;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="cls-1"
+                                d="M7.5,0a7.44,7.44,0,0,1,5.3,2.2L143.62,133a7.5,7.5,0,0,1,0,10.61L12.8,274.43a7.5,7.5,0,0,1-10.6-10.6L127.71,138.31,2.2,12.8A7.5,7.5,0,0,1,7.5,0Z" />
+                        </svg>
+
+
+
+
+                    <div class="mx-auto container col-md-10 col-xl-8 d-flex flex-row flex-wrap justify-content-between" id="infoTecAmigu">
+                        <div class="col-md-6 col-sm-12 pl-lg-5 mx-auto  text-left d-flex flex-column">
+                            <span>Tamanho:</span>
+                            <span id="tamanho-amigu">36 x 17 x 10 cm</span> <!-- 52 x 30 x 15 cm -->
+                        </div>
+                        <div class="col-md-6 col-sm-12 pr-lg-5 mx-auto text-md-right text-sm-center d-flex flex-column">
+                            <span>Peso: <span id="peso-amigu">258g</span> </span>
+                            <span>Fio: <span id="fio-amigu">1NP 13inchs</span></span>
+
+                        </div>
+                        <span id="preco-amigu" class="text-center mx-auto container m-3">
+                            R$70,00
+                        </span>
+                    </div>
+                    <button type="submit" class="botao botao-color-blue m-4 hvr-bounce-in mx-auto" onclick="insertOrcamento()">
+                        <a href="#orcamento" class="d-block text-decoration-none text-color-white">Me leve para casa!</a>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="orcamento" class="row d-flex flex-row p-0 align-items-center justify-content-around flex-nowrap">
+            <div class="">
+                <img src="img/bichinhos/tartaruga.svg" class="bichinho tartaruga d-md-block">
+                <img src="img/bichinhos/elefante.svg" class="bichinho elefante d-md-block">
+            </div>
+            <div id="img-orcamento" class="col-6" alt="">
+                <div class="row">
+                    <img src="./img/costura-01.svg" class="costura-catalogo col-12"> </img>
+                </div>
+            </div>
+            <div class="col-6 mt-5">
+                <form id="formulario-orcamento" class="row text-center d-flex justify-content-center">
+                    <p class="p-lg pb-3 col-8 mt-2 text-center d-sm-none d-md-none d-lg-block d-xlg-block">Do nosso
+                        Catálogo ou não, faça um orçamento que juntos vamos dar vida a esse seu novo Amigu! ;-)</p>
+                    <p class="p-lg pb-0 col-12 text-center d-sm-block d-md-block d-lg-none d-xlg-none">Faça seu
+                        orçamento! ;-)</p>
+                    <div class="form-group col-lg-5 col-md-6 col-sm-12 m-1">
+                        <label class="input-label" for="orcamento-nome">Seu Nome</label>
+                        <input class="orcamento-input" id="orcamento-nome" name="nome" type="text"
+                            placeholder="Dino da Silva Sauro">
+                    </div>
+                    <div class="form-group col-lg-5 col-md-6 col-sm-12 m-1 ">
+                        <label class="input-label" for="orcamento-amigu">O nome do Amigu</label>
+                        <input class="orcamento-input" id="orcamento-amigu" name="amigu" type="text" placeholder="Minions" >
+                    </div>
+                    <div class="form-group col-lg-5 col-md-6 col-sm-12 m-1">
+                        <label class="input-label" for="orcamento-telefone">Telefone</label>
+                        <input class="orcamento-input" id="orcamento-telefone" name="telefone" type="tel"
+                            placeholder="(11)12345-6789">
+                    </div>
+                    <div class="form-group col-lg-5 col-md-6 col-sm-12 m-1">
+                        <label class="input-label" for="orcamento-email">E-mail</label>
+                        <input class="orcamento-input" id="orcamento-email" name="email" type="email"
+                            placeholder="dino@sauro.com.br">
+                    </div>
+                    <p class="p-sm my-4 col-8 d-sm-none d-md-none d-lg-block d-xlg-block">Envie sua solicitação e
+                        entraremos em contato para confirmar e organizar tudo!</p>
+                    <button class="botao botao-color-red m-4 hvr-bounce-in" onclick="emailOrcamento()">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="row d-flex justify-content-center">
+        <img class="linha-novelo" src="./img/linha-novelo-corte.svg" alt="">
+        <div class="row d-flex justify-content-end m-0 p-0 w-100">
+            <ul id="rodape-icones-lista" class="col-6 list-group-horizontal p-0 d-flex justify-content-center">
+                <li class="rodape-li"><a href="https://www.facebook.com"><img src="img/facebook.svg" class="img-icone hvr-bounce-in"></a></li>
+                <li class="rodape-li"><a href="https://www.instagram.com/rosycroche1/"><img src="img/instagram.svg" class="img-icone hvr-bounce-in"></a></li>
+                <li class="rodape-li"><a href="http://wppredirect.tk/go/?p=5511971727348&m=Ol%C3%A1,%20gostaria%20de%20saber%20sobre%20os%20Amigurumis."><img src="img/whatsapp.svg" class="img-icone hvr-bounce-in"></a></li>
+                <li class="rodape-li"><a href="mailto:email@amigunovelo.com.br"><img src="img/mail.svg" class="img-icone hvr-bounce-in"></a> </li>
+            </ul>
+        </div>
+    </footer>
+</body>
